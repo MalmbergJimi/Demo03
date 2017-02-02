@@ -10,13 +10,13 @@ namespace Teht02
     {
         static void Main(string[] args)
         {
-            Pesukone pesukone = new Pesukone();
+            Pesukone pesukone = new Pesukone(); // Luodaan pesukone
             pesukone.IsOn = true;
             pesukone.WaterTemp = 40;
             pesukone.CColor = "White";
             pesukone.Program = "Ekopesu";
                         
-            pesukone.CloseHatch();
+            pesukone.CloseHatch(); // Suljetaan luukku
             Console.WriteLine("Pesuveden lämpötila on " + pesukone.WaterTemp);
             Console.WriteLine("Pestävän pyykin väri on " + pesukone.CColor);
             Console.WriteLine("Pesuohjlema on " + pesukone.Program);
@@ -24,7 +24,7 @@ namespace Teht02
             pesukone.OpenHatch();
             Console.WriteLine();
 
-            string program = "Pikapesu";
+            string program = "Pikapesu"; // Vaihdetaan pesuohjelma
             Pesukone pesee = new Pesukone(program);
             Console.WriteLine("Pesuveden lämpötila on " + pesukone.WaterTemp);
             Console.WriteLine("Pestävän pyykin väri on " + pesukone.CColor);
