@@ -15,9 +15,31 @@ namespace Teht04_1
 
         public void PrintData()
         {
+            Console.WriteLine("Vehicle specs:");
             Console.WriteLine("Vehicle's name: - " + Name);
             Console.WriteLine("Vehicle's speed: - " + Speed);
             Console.WriteLine("Number of tyres: - " + Tyres);
+        }
+
+        public void ToString()
+        {
+            
+
+        }
+
+        public void Accelerate() //Kaasua + 10;
+        {
+            Speed += 10; 
+        }
+
+        public void Brake() // Jarrua - 5;
+        {
+            Speed -= 5; 
+        }
+
+        public void RemoveTyre()
+        {
+            Tyres -= 1;
         }
     }
 }

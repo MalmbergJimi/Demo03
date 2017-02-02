@@ -38,11 +38,13 @@ namespace Teht03
 
         public void ChangeChanNext()
         {
-            Console.WriteLine("You changed the channel, nice choice!");
+            Channel += 1;
+            Console.WriteLine("You changed the channel to channel " + Channel + ", nice choice!");
         }
         public void ChangeChanPrev()
         {
-            Console.WriteLine("You put the previous channel back, boooooriiiing...");
+            Channel -= 1;
+            Console.WriteLine("You put the previous channel " + Channel + " back, boooooriiiing...");
         }
 
         

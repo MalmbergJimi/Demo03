@@ -17,18 +17,28 @@ namespace Teht04_1
 
             mazda.PrintData();
 
-            Console.WriteLine();
+            Console.WriteLine(); // ENTER
 
             Vehicle audi = new Vehicle();
             audi.Name = "Audi A4";
             audi.Speed = 192;
             audi.Tyres = 4;
-
             audi.PrintData();
+            Console.WriteLine(); // ENTER
+
+            audi.Accelerate();
+            audi.PrintData();
+            Console.WriteLine(); // ENTER
+
+            audi.RemoveTyre();
+            Console.WriteLine(audi.Name + " You have only " + audi.Tyres + " tyres left!");
+            Console.WriteLine("And your speed is " + audi.Speed);
+            audi.Brake();
+            Console.WriteLine("Now your speed is " + audi.Speed);
 
 
 
-            Console.WriteLine();
+            Console.WriteLine(); // ENTER
         }
     } 
     }
