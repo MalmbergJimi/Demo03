@@ -10,6 +10,7 @@ namespace Teht05
     {
         static void Main(string[] args)
         {
+            
             Opiskelija heikko = new Opiskelija();
             heikko.Nimi = "Heikko Hyyppä";
             heikko.Tunnus = "K1234";
